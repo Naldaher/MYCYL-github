@@ -7,6 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
+    
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -84,84 +85,90 @@
     <!-- Navbar End -->
 
 
-    <!-- Carousel Start -->
-    <div class="container-fluid px-0 mb-5">
-        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <video autoplay loop muted>
-                        <source src="video/intro.mp4" type="video/mp4">
-                        Tu navegador no soporta el elemento de video.
-                    </video>
-                    
-                    <audio id="miAudio" loop>
-                        <source src="video/music.mp3" type="audio/mp3">
-                        Tu navegador no soporta el elemento de audio.
-                    </audio>
-                    
-                    <!-- Controles de reproducción de audio -->
-                    <div>
-                        <button onclick="activarSonido()">Activar Sonido</button>
-                        <br>
-                        <label for="volumen">Control de Volumen:</label>
-                        <input type="range" id="volumen" min="0" max="1" step="0.1" value="1" onchange="cambiarVolumen()">
-                    </div>
-                    
-                    <script>
-                        var audio = document.getElementById("miAudio");
-                    
-                        // Función para activar el sonido
-                        function activarSonido() {
-                            audio.play();
-                        }
-                    
-                        // Función para cambiar el volumen del audio
-                        function cambiarVolumen() {
-                            var volumen = document.getElementById("volumen").value;
-                            audio.volume = volumen;
-                        }
-                    </script>
-                    
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-lg-8 text-start">
-                                    <p class="fs-4 text-white">¡El Equipo del Pinarillo te da la bienvenida!</p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInRight">MyCyl: "Uniendo a las personas, creando recuerdos para siempre"</h1>
-                                    <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">Explore More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/yasss.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-end">
-                                <div class="col-lg-8 text-end">
-                                    <p class="fs-4 text-white">Welcome to our dairy farm</p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Best Organic Dairy Products</h1>
-                                    <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">Explore More</a>
-                                </div>
+   <!-- Carousel Start -->
+<div class="container-fluid px-0 mb-5">
+    <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Controles de reproducción de audio -->
+        <div>
+            <button onclick="activarSonido()">Activar Sonido</button>
+            <br>
+            <label for="volumen">Control de Volumen:</label>
+            <input type="range" id="volumen" min="0" max="1" step="0.1" value="1" onchange="cambiarVolumen()">
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <video autoplay loop muted>
+                    <source src="video/intro.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+
+                <audio id="miAudio" loop>
+                    <source src="video/music.mp3" type="audio/mp3">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-lg-8 text-start">
+                                <p class="fs-4 text-white">¡El Equipo del Pinarillo te da la bienvenida!</p>
+                                <h1 class="display-1 text-white mb-5 animated slideInRight">MyCyl: "Uniendo a las personas, creando recuerdos para siempre"</h1>
+                                <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight" role="button">Explore More</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item">
+                <img class="w-100" src="img/yasss.jpg" alt="Image">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row justify-content-end">
+                            <div class="col-lg-8 text-end">
+                                <p class="fs-4 text-white">Welcome to our dairy farm</p>
+                                <h1 class="display-1 text-white mb-5 animated slideInRight">Best Organic Dairy Products</h1>
+                                <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft" role="button">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    <!-- Carousel End -->
+</div>
+<!-- Carousel End -->
+
+<script>
+    var audio = document.getElementById("miAudio");
+
+    // Función para activar el sonido
+    function activarSonido() {
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+
+    // Función para cambiar el volumen del audio
+    function cambiarVolumen() {
+        var volumen = document.getElementById("volumen").value;
+        audio.volume = volumen;
+    }
+</script>
 
 
     <!-- About Start -->

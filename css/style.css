@@ -648,3 +648,7 @@ body {
 .navbar .navbar-nav .nav-link.active {
     color: #e0195c;
 }
+.carousel-control-prev, .carousel-control-next {
+    height: 10%;
+    margin-top: 25%;
+}
