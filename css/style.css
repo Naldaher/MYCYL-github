@@ -185,7 +185,7 @@
 }
 
 .page-header {
-    background: url(../img/banner.jpg) center center no-repeat;
+    background: url(../img/MIT_fondo.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -475,7 +475,7 @@
 
 /*** Footer ***/
 .footer {
-    color: #8f4fe4;
+    color: #182881;
 }
 
 .footer .btn.btn-link {
@@ -653,4 +653,8 @@ body {
 .carousel-control-prev, .carousel-control-next {
     height: 10%;
     margin-top: 25%;
+}
+
+.bg-white {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 36%, rgba(206,214,251,1) 100%);
 }
