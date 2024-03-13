@@ -524,7 +524,7 @@
 }
 
 .text-secondary {
-    color: #EDDD5E !important
+    color: #182881 !important
 }
 
 .text-success {
@@ -657,4 +657,10 @@ body {
 
 .bg-white {
     background: linear-gradient(90deg, rgba(255,255,255,1) 36%, rgba(206,214,251,1) 100%);
+}
+
+.btn-secondary {
+    color: #000;
+    background-color: #752bca;
+    border-color: #752bca;
 }
