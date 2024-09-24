@@ -108,6 +108,17 @@
     <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/tutorials/timelines/timeline-6/assets/css/timeline-6.css">
     <!-- Timeline 6 - Bootstrap Brain Component -->
+    <style>
+        .timeline-item {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
     <section class="bsb-timeline-6 py-3 py-md-5 py-xl-8">
         <div class="container">
         <div class="row justify-content-center">
@@ -185,4 +196,26 @@
         </div>
         </div>
     </section>
+    <script>
+        const timelineItems = document.querySelectorAll('.timeline-item');
+
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        timelineItems.forEach(item => {
+            observer.observe(item);
+        });
+    </script>
 </body>
