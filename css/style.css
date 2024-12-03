@@ -524,7 +524,7 @@
 }
 
 .text-secondary {
-    color: #EDDD5E !important
+    color: #182881 !important
 }
 
 .text-success {
@@ -641,7 +641,7 @@ body {
     margin-right: 35px;
     padding: 25px 0;
     color: #752bca;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     outline: none;
 }
@@ -657,4 +657,22 @@ body {
 
 .bg-white {
     background: linear-gradient(90deg, rgba(255,255,255,1) 36%, rgba(206,214,251,1) 100%);
+}
+
+.btn-secondary {
+    color: #000;
+    background-color: #752bca;
+    border-color: #752bca;
+}
+
+.cd-timeline {
+    overflow: hidden;
+    padding: 2em 0;
+    padding: var(--space-lg) 0;
+    /* color: hsl(207, 10%, 55%); */
+    /* color: var(--cd-color-3); */
+    background: linear-gradient(90deg, rgba(255,255,255,1) 36%, rgba(206,214,251,1) 100%);
+    /* background-color: hsl(205, 38%, calc(89%*1.05)); */
+    font-family: 'Droid Serif', serif;
+    font-family: var(--font-primary);
 }
