@@ -664,15 +664,21 @@ body {
     background-color: #752bca;
     border-color: #752bca;
 }
+/*** timeline ***/
+/* FOOTER STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: black;
+  background: rgba(255, 255, 255, 0.65);
+}
 
-.cd-timeline {
-    overflow: hidden;
-    padding: 2em 0;
-    padding: var(--space-lg) 0;
-    /* color: hsl(207, 10%, 55%); */
-    /* color: var(--cd-color-3); */
-    background: linear-gradient(90deg, rgba(255,255,255,1) 36%, rgba(206,214,251,1) 100%);
-    /* background-color: hsl(205, 38%, calc(89%*1.05)); */
-    font-family: 'Droid Serif', serif;
-    font-family: var(--font-primary);
+.page-footer a {
+  display: flex;
+  margin-left: 4px;
 }
