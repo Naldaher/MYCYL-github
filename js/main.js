@@ -64,3 +64,27 @@
     
 })(jQuery);
 
+//TIMELINE
+document.addEventListener('DOMContentLoaded', function () {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    timelineItems.forEach(item => {
+        observer.observe(item);
+    });
+});
+
